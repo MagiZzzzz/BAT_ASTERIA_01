@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BAT_ASTERIA_01 — Portfolio GTB/GTC, supervision web, simulation temps réel et architecture multi-protocoles." />
+  <title>BAT_ASTERIA_01 — Portfolio GTB/GTC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0b1220',
+            panel: '#101a2e',
+            panel2: '#14213d',
+            accent: '#7c3aed',
+            accent2: '#22c55e'
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(124,58,237,.25), 0 20px 80px rgba(0,0,0,.45)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-slate-100 min-h-screen antialiased">
+  <div class="max-w-7xl mx-auto px-6 py-8 lg:py-12">
+    <header class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between mb-10">
+      <div>
+        <p class="text-xs uppercase tracking-[0.35em] text-slate-400">GTB / GTC · Portfolio technique</p>
+        <h1 class="text-4xl lg:text-6xl font-black mt-3 leading-tight">BAT_ASTERIA_01</h1>
+        <p class="mt-4 max-w-2xl text-slate-300 text-lg">
+          Un site vitrine + une base de démo pensée pour montrer une architecture GTB crédible : supervision web,
+          simulation terrain, alarmes, tendances, comptage, CVC, éclairage et multi-protocoles.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-3 w-full lg:w-auto">
+        <div class="rounded-2xl bg-panel p-4 shadow-glow border border-white/5">
+          <div class="text-slate-400 text-xs uppercase tracking-wider">Statut</div>
+          <div class="text-2xl font-bold mt-1 text-emerald-400">Online ready</div>
+        </div>
+        <div class="rounded-2xl bg-panel p-4 shadow-glow border border-white/5">
+          <div class="text-slate-400 text-xs uppercase tracking-wider">Mode</div>
+          <div class="text-2xl font-bold mt-1 text-violet-300">Portfolio</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid lg:grid-cols-3 gap-6 mb-6">
+      <article class="lg:col-span-2 rounded-3xl bg-gradient-to-br from-panel via-panel2 to-panel p-8 shadow-glow border border-white/5">
+        <h2 class="text-2xl font-bold">Vision du projet</h2>
+        <p class="mt-4 text-slate-300 leading-7">
+          Le projet simule un bâtiment tertiaire multi-zones avec CTA, rooftops, éclairage piloté, comptage structuré,
+          capteurs LoRaWAN, intégration BACnet/Modbus/MQTT et une couche de supervision exploitant les données en temps réel.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm">BACnet</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm">Modbus TCP/RTU</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm">LoRaWAN</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm">MQTT</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm">Web supervision</span>
+        </div>
+      </article>
+      <article class="rounded-3xl bg-panel p-8 shadow-glow border border-white/5">
+        <h2 class="text-2xl font-bold">Accès rapide</h2>
+        <div class="mt-5 space-y-3 text-sm">
+          <a class="block rounded-2xl bg-white/5 hover:bg-white/10 transition p-4 border border-white/5" href="BAT_ASTERIA_01_portfolio/">
+            Ouvrir le dossier portfolio
+          </a>
+          <a class="block rounded-2xl bg-white/5 hover:bg-white/10 transition p-4 border border-white/5" href="#architecture">
+            Voir l’architecture
+          </a>
+          <a class="block rounded-2xl bg-white/5 hover:bg-white/10 transition p-4 border border-white/5" href="#demo">
+            Voir la démo
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section id="architecture" class="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mb-6">
+      <div class="rounded-3xl bg-panel p-6 border border-white/5 shadow-glow">
+        <h3 class="font-bold text-xl">1. Vitrine publique</h3>
+        <p class="mt-3 text-slate-300 text-sm leading-6">Présentation du projet, des lots, des choix d’architecture, des schémas et des livrables.</p>
+      </div>
+      <div class="rounded-3xl bg-panel p-6 border border-white/5 shadow-glow">
+        <h3 class="font-bold text-xl">2. Démo technique</h3>
+        <p class="mt-3 text-slate-300 text-sm leading-6">Interface lecture seule avec données simulées, alarmes, tendances, et vues d’exploitation.</p>
+      </div>
+      <div class="rounded-3xl bg-panel p-6 border border-white/5 shadow-glow">
+        <h3 class="font-bold text-xl">3. Backend & API</h3>
+        <p class="mt-3 text-slate-300 text-sm leading-6">FastAPI ou Node.js pour exposer les points, scénarios, alarmes et flux temps réel.</p>
+      </div>
+      <div class="rounded-3xl bg-panel p-6 border border-white/5 shadow-glow">
+        <h3 class="font-bold text-xl">4. Simulation</h3>
+        <p class="mt-3 text-slate-300 text-sm leading-6">Génération de températures, consommations, états techniques et défauts terrain.</p>
+      </div>
+    </section>
+
+    <section id="demo" class="grid lg:grid-cols-3 gap-6">
+      <article class="lg:col-span-2 rounded-3xl bg-panel p-8 border border-white/5 shadow-glow">
+        <h2 class="text-2xl font-bold">Démo live à implémenter</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+          <div class="rounded-2xl bg-white/5 p-4 border border-white/5">
+            <div class="text-slate-400 text-xs uppercase">CVC</div>
+            <div class="mt-2 text-lg font-semibold">CTA / Rooftops / Splits</div>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-4 border border-white/5">
+            <div class="text-slate-400 text-xs uppercase">Comptage</div>
+            <div class="mt-2 text-lg font-semibold">Tableaux + sous-tableaux</div>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-4 border border-white/5">
+            <div class="text-slate-400 text-xs uppercase">Alarmes</div>
+            <div class="mt-2 text-lg font-semibold">Historique + acquittement</div>
+          </div>
+        </div>
+      </article>
+      <article class="rounded-3xl bg-gradient-to-b from-emerald-500/15 to-transparent p-8 border border-emerald-400/20 shadow-glow">
+        <h2 class="text-2xl font-bold text-emerald-300">Objectif recruteur</h2>
+        <ul class="mt-5 space-y-3 text-sm text-slate-200 leading-6 list-disc list-inside">
+          <li>Montrer la maîtrise des protocoles</li>
+          <li>Montrer la structuration d’un vrai site</li>
+          <li>Montrer une logique d’exploitation</li>
+          <li>Montrer une séparation public / contrôle</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
