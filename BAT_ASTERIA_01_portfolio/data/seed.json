@@ -1,0 +1,62 @@
+{
+  "site": "BAT_ASTERIA_01",
+  "zones": [
+    {
+      "id": "RDC_HALL",
+      "name": "Hall / Accueil",
+      "type": "public"
+    },
+    {
+      "id": "R1_OPENSPACE",
+      "name": "Open-space R+1",
+      "type": "office"
+    },
+    {
+      "id": "R1_MEETING",
+      "name": "Salles de réunion R+1",
+      "type": "meeting"
+    },
+    {
+      "id": "R2_OPENSPACE",
+      "name": "Open-space R+2",
+      "type": "office"
+    },
+    {
+      "id": "B1_TECH",
+      "name": "Sous-sol technique",
+      "type": "technical"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AHU_01",
+      "type": "CTA",
+      "zone": "R1_OPENSPACE",
+      "protocol": "BACnet/IP"
+    },
+    {
+      "id": "AHU_02",
+      "type": "CTA",
+      "zone": "R2_OPENSPACE",
+      "protocol": "BACnet/IP"
+    },
+    {
+      "id": "RTU_01",
+      "type": "Rooftop",
+      "zone": "RDC_HALL",
+      "protocol": "BACnet/IP"
+    },
+    {
+      "id": "EMB_TGBT",
+      "type": "Compteur TGBT",
+      "zone": "B1_TECH",
+      "protocol": "Modbus TCP"
+    },
+    {
+      "id": "LORA_CO2_01",
+      "type": "Sonde CO2",
+      "zone": "R1_MEETING",
+      "protocol": "LoRaWAN"
+    }
+  ]
+}

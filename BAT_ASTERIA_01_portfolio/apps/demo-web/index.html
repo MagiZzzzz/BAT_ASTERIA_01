@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>BAT_ASTERIA_01 — Démo GTB</title>
+  <link rel="stylesheet" href="/demo/styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">BAT_ASTERIA_01</p>
+      <h1>Portfolio GTB/GTC interactif</h1>
+      <p class="muted">Démo live en lecture seule — supervision, alarmes, zones, tendances et scénarios.</p>
+    </div>
+    <a class="chip" href="/">Documentation publique</a>
+  </header>
+
+  <main class="grid">
+    <section class="card hero">
+      <div class="hero-left">
+        <h2>Vue d’ensemble</h2>
+        <div id="kpis" class="kpis"></div>
+      </div>
+      <div class="hero-right">
+        <h3>État systèmes</h3>
+        <ul id="systems"></ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Zones</h2>
+      <div id="zones" class="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Alarmes</h2>
+      <div id="alarms" class="list"></div>
+    </section>
+
+    <section class="card wide">
+      <h2>Scénarios de démonstration</h2>
+      <div class="scenarios">
+        <button data-scenario="ahu-failure">Panne CTA</button>
+        <button data-scenario="high-co2">CO2 élevé</button>
+        <button data-scenario="schedule-switchover">Bascule horaire</button>
+        <button data-reset="true" class="ghost">Reset</button>
+      </div>
+      <p class="muted" id="scenario-status">Aucun scénario en cours.</p>
+    </section>
+
+    <section class="card wide">
+      <h2>Notes portfolio</h2>
+      <p>
+        Cette interface sépare la vitrine publique, la démo technique et le cœur de simulation.
+        Le rôle du recruteur est de naviguer, d’observer, et de lancer uniquement des scénarios bornés.
+      </p>
+    </section>
+  </main>
+
+  <script src="/demo/app.js"></script>
+</body>
+</html>

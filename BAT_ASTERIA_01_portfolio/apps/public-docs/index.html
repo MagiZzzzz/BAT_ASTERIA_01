@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>BAT_ASTERIA_01 — Portfolio GTB/GTC</title>
+  <style>
+    body{font-family:system-ui;margin:0;background:#0b1220;color:#e8eefc}
+    main{max-width:1100px;margin:0 auto;padding:40px 20px}
+    .hero{padding:28px;border:1px solid rgba(255,255,255,.08);border-radius:24px;background:#111a2b}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
+    .card{padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:#16233a}
+    a{color:#8ec5ff}
+    .muted{color:#a8b4d3}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>BAT_ASTERIA_01</h1>
+    <p class="muted">Portfolio GTB/GTC orienté recruteur : architecture, lots techniques, protocoles, supervision et démo live.</p>
+    <p><a href="/demo">Ouvrir la démo live</a></p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Ce que montre le projet</h2>
+      <ul>
+        <li>CTA, rooftops, climatisations</li>
+        <li>Comptage électrique et sous-comptage</li>
+        <li>Éclairage par zone et par usage</li>
+        <li>Alarmes techniques et scénarios</li>
+        <li>LoRaWAN, BACnet, Modbus, MQTT</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Ce que peut tester un visiteur</h2>
+      <ul>
+        <li>Vue globale du bâtiment</li>
+        <li>Zones et équipements</li>
+        <li>Alarmes ouvertes</li>
+        <li>Scénarios de démonstration</li>
+        <li>État temps réel simulé</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Hébergement conseillé</h2>
+      <p>Documentation publique sur GitHub Pages.</p>
+      <p>Démo live sur Render ou VPS Docker avec HTTPS.</p>
+    </div>
+    <div class="card">
+      <h2>Structure du dépôt</h2>
+      <p class="muted">apps/public-docs · apps/demo-web · apps/demo-api · infra · data</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

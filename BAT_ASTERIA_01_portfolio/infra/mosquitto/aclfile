@@ -1,0 +1,4 @@
+user demo-reader
+topic read bat-asteria-01/#
+user demo-writer
+topic readwrite bat-asteria-01/scenario/#
